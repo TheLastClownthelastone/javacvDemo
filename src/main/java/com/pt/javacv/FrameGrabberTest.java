@@ -80,6 +80,6 @@ public class FrameGrabberTest {
     }
 
     public static void main(String[] args) throws Exception {
-        recordCamera("1.mp4",25);
+        recordCamera("rtmp://192.168.10.76/live/zb",25);
     }
 }
