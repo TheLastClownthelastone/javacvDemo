@@ -20,6 +20,8 @@ import java.util.concurrent.TimeUnit;
  */
 public class SxtAndYinp {
 
+
+
     public static void main(String[] args) throws Exception {
 
         // 开启摄像头抓取器,0表示摄像头
@@ -31,7 +33,10 @@ public class SxtAndYinp {
         opencv_core.IplImage image = converter.convert(grabber.grab());
 
         // 文件解析器
+        // recorder.record(); 录制视频帧 参数为 帧
+        // recorder.recordSamples() 录入音频设备 参数为 Buffer java.nio 中的字节缓冲区，调用本地的音频设备获取对应的音频设备产生的字节数组
         FFmpegFrameRecorder recorder = FFmpegFrameRecorder.createDefault("SxtAndYinp.mp4", image.width(), image.height());
+
         recorder.setInterleaved(true);
 
         // 降低延迟
