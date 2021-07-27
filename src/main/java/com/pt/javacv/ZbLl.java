@@ -16,7 +16,7 @@ public class ZbLl {
 
     public static void main(String[] args) throws Exception{
 
-        FFmpegFrameGrabber grabber = new FFmpegFrameGrabber("rtmp://0.tcp.ngrok.io:18377/live/steams");
+        FFmpegFrameGrabber grabber = new FFmpegFrameGrabber("rtmp://4.tcp.ngrok.io:13274/live/steams");
         grabber.start();
 
 
