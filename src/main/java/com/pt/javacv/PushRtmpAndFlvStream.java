@@ -77,7 +77,8 @@ public class PushRtmpAndFlvStream {
     }
 
     public static void main(String[] args) throws Exception, org.bytedeco.javacv.FrameGrabber.Exception {
-        pushFlvOrRtmp("http://zhibo.hkstv.tv/livestream/mutfysrq.flv","eguid.flv",400,300,25);
+        pushFlvOrRtmp("http://192.168.5.24:32082/hls/745fb7dcd63941d1bd3b74a327ca2baa_1080/index.m3u8","eguid.flv",400,300,25);
+
     }
 
 
