@@ -5,6 +5,8 @@ import org.bytedeco.javacpp.opencv_core;
 import org.bytedeco.javacv.*;
 
 import javax.swing.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author nate-pt
@@ -70,6 +72,10 @@ public class Luzhi {
         frame.dispose();//关闭窗口
         recorder.close();//关闭推流录制器，close包含release和stop操作
         grabber.close();//关闭抓取器
+        List<String> list = new ArrayList<>();
+
+        list.add(2,"3");
+
     }
 
 }
