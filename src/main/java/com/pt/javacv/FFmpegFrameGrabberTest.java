@@ -87,7 +87,7 @@ public class FFmpegFrameGrabberTest {
     }
 
     public static void main(String[] args) throws Exception {
-        String inputFile = "rtsp://admin:admin@192.168.2.236:37779/cam/realmonitor?channel=1&subtype=0";
+        String inputFile = "rtmp://192.168.5.141:9004/live";
         // Decodes-encodes
         String outputFile = "recorde.mp4";
         frameRecord(inputFile, outputFile,1);

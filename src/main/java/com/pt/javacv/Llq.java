@@ -14,7 +14,7 @@ public class Llq {
 
     public static void main(String[] args) throws Exception {
         // 从斗鱼平台从
-        String inputFile = "https://93a4d4c1c2476f08ae415f00cec92ddc.v.smtcdns.net/mobilep2.douyucdn2.cn/dyliveflv3a/454499rhLahsHkvB.xs?startid=4133331977&substream=1&basesub=4&playid=1626767073682-2312048291&uuid=a7899853-db3a-4793-b475-f3b9476762f7&txSecret=d7a76d837a32c984d3b76f0ef3e89b4f&txTime=60f68145&origin=tct";
+        String inputFile = "http://192.168.5.142:8002/hls/d040f700f3db45fab04adaf1240012dd_1080/index.m3u8";
         String outputFile = "3.flv";
         // 抓取器，设置文件来源
         FFmpegFrameGrabber grabber = new FFmpegFrameGrabber(inputFile);
